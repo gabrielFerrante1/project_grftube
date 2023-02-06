@@ -1,0 +1,38 @@
+.cardPlaylist {
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.cardPlaylistHeader {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(46, 46, 46, 0.596);
+    padding:10px 0;
+
+
+    & h2 {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+        color: white
+    }
+}
+
+.cardPlaylistList { 
+    margin: 10px 0 ;
+    .playlistItem {
+        cursor: pointer;
+        padding: 5px 0 5px 20px;
+        transition: all .3s;
+    }
+
+    .playlistItem:hover {
+        background-color: rgba(196, 195, 195, 0.116);
+    }
+
+    .playlistItemRunning {
+        background-color: rgba(151, 180, 238, 0.185);
+    }
+}
+

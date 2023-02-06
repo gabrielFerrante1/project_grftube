@@ -1,0 +1,51 @@
+.container {
+    width: fit-content;
+    height: fit-content;
+    transition: all 0.3s;
+    height: 100%;
+    border-right: 1px solid rgb(53, 53, 53);
+}
+
+.item {
+    display: flex;
+    padding: 11px 25px;
+    gap: 21px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: rgba(68, 68, 68, 0.425);
+}
+
+.itemDivisor {
+    border-bottom: 1px solid rgb(65, 64, 64);
+}
+
+.itemIcon {
+    .icon {
+        color: white;
+        font-size: 25px;
+    }
+}
+
+.itemLabel {
+    margin-top: 2px;
+    width: 80%;
+
+    .label {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: white;
+        font-size: 15px;
+    }
+}
+
+.itemDivisorLabel {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    margin-left: 25px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}

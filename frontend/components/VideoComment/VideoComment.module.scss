@@ -1,0 +1,56 @@
+.countComments {
+    margin: 30px 4px 19px 4px;
+
+
+    & h3 {
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.newComment {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.newCommentUserAvatar {
+    font-size: 10px;
+}
+
+.newCommentInput {
+    margin-top: -12px;
+    flex: 1;
+    color: rgb(235, 235, 235);
+
+}
+
+.newCommentSendButton {
+    cursor: pointer;
+    color: white;
+    font-size: 21px;
+    margin-right: 10px;
+}
+
+.comments {
+    margin-top: 30px;
+    margin-left: 2px;
+}
+
+.commentItem {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.commentInfoName {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.commentInfoBody {
+    font-size: 15px;
+    color: rgb(219, 219, 219);
+}

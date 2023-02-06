@@ -1,0 +1,86 @@
+@mixin ButtonSub($color, $background) {
+    margin-top: 2px;
+    margin-left: 10px;
+    background-color: $background;
+    color: $color;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 17px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+}
+
+.container {
+    overflow-x: hidden;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    & img {
+        height: 240px;
+        width: 100%;
+    }
+}
+
+.channelContainer {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    background-color: rgb(14, 14, 14);
+}
+
+.channel {
+    width: 100%;
+    max-width: 1400px;
+}
+
+.channelHeader {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(49, 49, 49);
+
+    & .channelHeaderAvatar img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    & .channelHeaderInfo {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        & .channelHeaderInfoName {
+            font-size: 21px;
+            color: rgb(233, 231, 231);
+            font-family: Roboto, Arial, sans-serif;
+        }
+
+        & .channelHeaderInfoCountSubscribers {
+            font-size: 14px;
+            color: rgb(167, 167, 167);
+        } 
+    }
+
+    & .channelHeaderInfoSubscribe {
+        & .channelHeaderInfoSubscribeBtn {
+            @include ButtonSub(black, white)
+        }
+
+        & .channelHeaderInfoDisSubscribeBtn {
+            @include ButtonSub(rgb(255, 255, 255), rgba(71, 71, 71, 0.623))
+        }
+    }
+
+}
+
+.channelVideos {
+    margin-top: 20px;
+}
