@@ -1,0 +1,12 @@
+.container {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 410px;
+}
+
+@media (max-width: 1500px) {
+    .container {
+        width: 30%;
+    }
+}

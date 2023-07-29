@@ -1,0 +1,181 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(12, 12, 12);
+    height: fit-content;
+    min-height: 100%;
+    user-select: none;
+    padding-top: 30px;
+}
+
+.containerVideoLeft {
+    margin: 0 auto;
+}
+
+.video { 
+    max-width: 1200px;
+}
+
+.videoTags {
+    margin: 6px 2px 0px 4px;
+    display: flex;
+    gap: 10px;
+
+    .tag {
+        font-size: 12.5px;
+        color: rgb(0, 140, 255);
+    }
+}
+
+.videoTitle {
+    margin: 0px 4px 0 4px;
+
+    .title {
+        font-weight: 600;
+        font-size: 22px;
+        color: white;
+    }
+}
+
+.description {
+    border-radius: 8px;
+    background-color: rgba(61, 61, 61, 0.582);
+    color: white;
+    padding: 6px 14px;
+
+    .descriptionInfo {
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .descriptionBody {
+        font-size: 14px;
+    }
+}
+
+.videoActions {
+    margin: 20px 4px;
+    display: flex;
+    align-items: center;
+}
+
+.videoChannel {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 1;
+}
+
+.videoChannel>a>span>img {
+    width: 44px;
+    height: 44px;
+}
+
+.videoChannelInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .videoChannelInfoName {
+        font-weight: 500;
+        color: white;
+        font-size: 16.5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 260px;
+    }
+
+    .videoChannelInfoVerifiedIcon {
+        color: rgb(134, 132, 132);
+        font-size: 18px;
+    }
+
+    .videoChannelInfoSubscribers {
+        line-height: 17px;
+        font-size: 13px;
+        color: rgb(138, 138, 138);
+    }
+}
+
+.videoChannelSubscribButton {
+    margin-top: 2px;
+    margin-left: 10px;
+    background-color: white;
+    color: black;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 17px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+}
+
+.videoChannelDisSubscribButton {
+    margin-top: 2px;
+    margin-left: 10px;
+    background-color: rgba(71, 71, 71, 0.623);
+    color: rgb(255, 255, 255);
+    height: 38px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0px 19px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+}
+
+.containerVideoRight { 
+    padding-right: 20px;
+    min-width: 460px;
+    max-width: 480px;
+}
+
+.videoInteractions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.videoInteraction {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: rgba(48, 48, 48, 0.753);
+    padding: 9px 17px;
+    border-radius: 20px;
+
+    .videoInteractionLike {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding-right: 10px;
+        border-right: 1px solid gray;
+        cursor: pointer;
+    }
+
+    .videoInteractionDislike {
+        padding-left: 5px;
+        cursor: pointer;
+    }
+
+
+    & svg {
+        font-size: 22px;
+        color: white;
+    }
+
+    & span {
+        display: block;
+        margin-top: -2px;
+        font-size: 15px;
+        color: white;
+    }
+}
+
+.textDesactivateCommentsArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    color: rgb(156, 156, 156);
+}

@@ -1,0 +1,147 @@
+.container {
+    display: flex;
+    background-color: rgb(24, 24, 24);
+    align-items: center;
+    padding: 2px 25px;
+    height: 100%;
+}
+
+.menuIcon {
+    cursor: pointer;
+    margin-top: -1px;
+    font-size: 23.5px;
+    color: rgb(207, 207, 207)
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.logoLabel {
+    margin-bottom: 1px;
+    font-weight: 700;
+    font-size: 21px;
+    color: white;
+}
+
+
+.containerLeft {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    height: 100%;
+}
+
+.containerCenter {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.containerRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.search {
+    flex: 1;
+    max-width: 550px;
+    display: flex;
+
+    border: 1px solid rgba(255, 255, 255, 0.158);
+    border-radius: 80px;
+
+}
+
+.searchInput:focus .searchInput::before {
+    color: red;
+}
+
+.searchInput {
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: red;
+    padding: 6px 5px 6px 15px;
+    color: white;
+}
+
+.searchInput::placeholder {
+    color: rgb(150, 148, 148);
+}
+
+.searchBtn {
+    cursor: pointer;
+    background-color: rgba(129, 129, 129, 0.329);
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+
+}
+
+.btnIcon {
+    margin-left: -3px;
+    margin-bottom: -1px;
+    font-size: 20px;
+    color: rgb(216, 216, 216);
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    color: rgb(61, 135, 247);
+    border: 1px solid rgba(255, 255, 255, 0.301);
+    border-radius: 60px;
+    padding: 6px 13px;
+    gap: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.avatar:hover {
+    background-color: rgba(94, 172, 245, 0.24);
+}
+
+.avatarNotLogged {
+    font-size: 22px;
+}
+
+.avatarUserName {
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.searchMic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+.searchMicIcon {
+    margin-top: 3px;
+    font-size: 23px; 
+}
+
+.notificationIcon {
+    color: white;
+    font-size: 25px;
+    margin-top: 1px;
+}

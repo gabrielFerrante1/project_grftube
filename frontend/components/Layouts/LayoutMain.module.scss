@@ -1,0 +1,29 @@
+$navbar_height: 63px;
+
+.container {
+    min-width: 1000px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.containerPage {
+    display: flex;
+
+}
+
+.navbar {
+    height: $navbar_height;
+}
+
+.sidebar {
+    height: calc(100vh - $navbar_height);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgb(19, 19, 19);
+}
+
+.app {
+    flex: 1;
+    height: calc(100vh - $navbar_height);
+    overflow: auto;
+}
