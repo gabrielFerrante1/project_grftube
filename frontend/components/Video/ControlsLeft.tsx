@@ -3,7 +3,7 @@ import { MutableRefObject, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
 import { IoMdPlay, IoMdPause, IoMdVolumeHigh, IoMdVolumeLow, IoMdVolumeOff, IoMdSkipForward, IoMdSkipBackward } from 'react-icons/io'
-import { setPauseVideo, setPlaylistBackward, setPlaylistForward, setPlaylistIndex, setPlayVideo, setVideoCurrentId, setVideoCurrentSrc, setVideoPlayBackRate, setVideoTime, setVideoVolume } from '../../redux/reducers/playerReducer'
+import { setPauseVideo, setPlaylistBackward, setPlaylistForward, setPlayVideo, setVideoVolume } from '../../redux/reducers/playerReducer'
 import {
     Slider,
     SliderTrack,
@@ -29,8 +29,8 @@ export default ({ video }: Props) => {
     const handlePauseVideo = () => dispatch(setPauseVideo())
     const handleChangeVolumeVideo = (v: number) => dispatch(setVideoVolume(v))
     const handleSkipBackward = () => dispatch(setPlaylistBackward(true))
-    const handleSkipForward = () => dispatch(setPlaylistForward(true)) 
- 
+    const handleSkipForward = () => dispatch(setPlaylistForward(true))
+
     const conditionalSkipBackward = player.playlist.length > 0 && player.playlistIndex >= 2 && player.playlist.find((item) => item.id == player.videoCurrentId)
     const conditionalSkipForward = player.playlist.length >= player.playlistIndex + 1 && player.playlist.find((item) => item.id == player.videoCurrentId)
 

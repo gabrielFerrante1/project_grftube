@@ -7,8 +7,11 @@ export const store = configureStore({
     reducer: {
         auth: authReducer,
         app: appReducer,
-        player: playerReducer
+        player: playerReducer,
     },
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+        serializableCheck: false,
+    }),
 });
 
-export type RootState = ReturnType<typeof store.getState>; 
+export type RootState = ReturnType<typeof store.getState>;
